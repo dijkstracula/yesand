@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "yesand"
+version = "0.1.0"
+description = ""
+authors = ["Nathan Taylor <ntaylor@cs.utexas.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "8.1.3"
+
+# Transitive dependencies for IVy
+ply = "3.11"
+pydot = "1.4.2"
+six = "1.16.0"
+tarjan = "0.2.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate = 'yesand.cli:generate'
